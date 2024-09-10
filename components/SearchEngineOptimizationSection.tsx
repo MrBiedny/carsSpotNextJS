@@ -21,8 +21,8 @@ export default function SearchEngineOptimizationSection({
       <h2 className="seo__title">{title}</h2>
       <p className="seo__text">{text}</p>
       <div
-        className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
-          isExpanded ? "max-h-[1000px]" : "max-h-0"
+        className={`duration-300 ease-in-out overflow-hidden ${
+          isExpanded ? "max-h-[80px]" : "max-h-0"
         }`}
       >
         <p className="text-white">
@@ -39,7 +39,9 @@ export default function SearchEngineOptimizationSection({
           onClick={toggleExpand}
         />
         <ArrowDownIcon
-          className={`size-5 text-white ${isExpanded ? "rotate-180" : ""}`}
+          className={`size-5 transition text-white ${
+            isExpanded ? "rotate-180" : ""
+          }`}
         />
       </div>
     </div>

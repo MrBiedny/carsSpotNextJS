@@ -6,7 +6,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  ode: "jit",
+  mode: "jit",
   theme: {
     extend: {
       fontFamily: {
@@ -18,12 +18,6 @@ const config: Config = {
           DEFAULT: "#0147FF",
           100: "#F5F8FF",
         },
-        "secondary-orange": "#f79761",
-        "light-white": {
-          DEFAULT: "rgba(59,60,152,0.03)",
-          100: "rgba(59,60,152,0.02)",
-        },
-        grey: "#747A88",
       },
       backgroundImage: {
         pattern: "url('/pattern.png')",
