@@ -6,11 +6,11 @@ export default function CarouselCarsDots({
   count,
 }: CarouselCarsDotsProps) {
   return (
-    <div className="flex absolute bottom-4 left-1/2 transform -translate-x-1/2 space-x-2">
+    <div className="carousel__dots-container">
       {Array.from({ length: count }).map((_, index) => (
         <button
           key={index}
-          className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${
+          className={`carousel__dot ${
             selectedIndex === index ? "bg-primary-blue" : "bg-gray-300"
           }`}
           onClick={() => onDotClick(index)}

@@ -5,6 +5,14 @@ import CarouselCars from "@/components/CarouselCars";
 import SearchEngineOptimization from "@/components/SearchEngineOptimization";
 
 export default function Home() {
+  const renderLink = function (text: string, href: string) {
+    return (
+      <Link href={href} className="home__links">
+        {text}
+      </Link>
+    );
+  };
+
   return (
     <main className="overflow-hidden" id="top">
       <Hero />
@@ -19,18 +27,8 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-12">
-            <Link
-              href="#discover"
-              className="hover:text-primary-blue hover:underline hover:font-semibold"
-            >
-              Samochody osobowe
-            </Link>
-            <Link
-              href="#discover"
-              className="hover:text-primary-blue hover:underline hover:font-semibold"
-            >
-              Samochody dostawcze
-            </Link>
+            {renderLink("Samochody osobowe", "#discover")}
+            {renderLink("Samochody dostawcze", "#discover")}
           </div>
         </div>
       </div>

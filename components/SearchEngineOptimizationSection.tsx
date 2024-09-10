@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import { ArrowDownIcon } from "@heroicons/react/16/solid";
+
 import CustomButton from "./CustomButton";
 import { SearchEngineOptimizationProps } from "@/types";
 
-export default function FooterSection({
+export default function SearchEngineOptimizationSection({
   title,
   text,
 }: SearchEngineOptimizationProps) {
@@ -17,10 +18,8 @@ export default function FooterSection({
 
   return (
     <div className="flex flex-col items-start gap-4">
-      <h2 className="text-white text-[25px] leading-[37.5px] font-bebas uppercase tracking-[-.03em]">
-        {title}
-      </h2>
-      <p className="text-white font-roboto-condensed text-sm">{text}</p>
+      <h2 className="seo__title">{title}</h2>
+      <p className="seo__text">{text}</p>
       <div
         className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
           isExpanded ? "max-h-[1000px]" : "max-h-0"
@@ -33,7 +32,7 @@ export default function FooterSection({
           Ad.
         </p>
       </div>
-      <div className="flex justify-center gap-[6px] items-start border-b-2 border-white">
+      <div className="seo__expand-button">
         <CustomButton
           title={isExpanded ? "Zwiń" : "Rozwiń"}
           containerStyles="pb-[6px] text-white font-roboto-condensed"

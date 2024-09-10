@@ -3,19 +3,13 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col bg-black-100 items-center w-full">
-      <div className="w-full border-t border-gray-100 mt-[88px]" />
-      <div className="w-full max-w-[1440px] flex justify-between items-center sm:px-20 px-6 py-6">
-        <Link
-          href="#top"
-          className="text-white font-bold text-base font-roboto-condensed"
-        >
+    <footer className="footer">
+      <div className="footer__border" />
+      <div className="footer__links">
+        <Link href="#top" className="footer__link font-bold">
           Cars Spot
         </Link>
-        <Link
-          href="#top"
-          className="text-white border-b-[1px] text-base border-white font-roboto-condensed"
-        >
+        <Link href="#top" className="footer__link border-b-[1px] border-white ">
           Polityka prywatności
         </Link>
       </div>

@@ -11,7 +11,7 @@ export default function Hero() {
         <p className="hero__subtitle">
           Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.
         </p>
-        <div className="flex gap-6">
+        <div className="flex gap-6 z-10 relative">
           <Link
             href="#discover"
             className="bg-primary-blue text-white rounded-md mt-10 px-6 py-3"
@@ -24,7 +24,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="hero__image-container">
+      <div className="hero__images-container">
         <div className="hero__subtract hidden lg:block">
           <Image
             src="/subtract.png"
