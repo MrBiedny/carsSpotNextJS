@@ -57,11 +57,11 @@ export default function CarouselCars() {
     <section className="relative pb-20">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
-          {renderImage("/alfaRomeo.png", "Alfa Romeo")}
-          {renderImage("/maserati.png", "Maserati")}
-          {renderImage("/audi.png", "Audi")}
-          {renderImage("/alfaRomeo.png", "Alfa Romeo")}
-          {renderImage("/maserati.png", "Maserati")}
+          {renderImage("/images/alfaRomeo.png", "Alfa Romeo")}
+          {renderImage("/images/maserati.png", "Maserati")}
+          {renderImage("/images/audi.png", "Audi")}
+          {renderImage("/images/alfaRomeo.png", "Alfa Romeo")}
+          {renderImage("/images/maserati.png", "Maserati")}
         </div>
       </div>
       <CarouselCarsDots

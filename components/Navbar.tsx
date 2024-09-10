@@ -9,7 +9,7 @@ export default function Navbar() {
       <nav className="navbar">
         <Link href="/">
           <Image
-            src="/carsSpot.png"
+            src="/images/carsSpot.png"
             alt="Cars Spot Logo"
             width={153}
             height={33}

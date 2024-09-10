@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="hero__images-container">
         <div className="hero__subtract hidden lg:block">
           <Image
-            src="/subtract.png"
+            src="/images/subtract.png"
             alt="Subtract"
             fill
             className="object-contain"
@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
         <div className="hero__image">
           <Image
-            src="/group.png"
+            src="/images/group.png"
             alt="Hero image - 3 cars"
             width={1064}
             height={404}
