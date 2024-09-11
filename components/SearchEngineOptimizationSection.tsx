@@ -22,7 +22,7 @@ export default function SearchEngineOptimizationSection({
       <p className="seo__text">{text}</p>
       <div
         className={`duration-300 ease-in-out overflow-hidden ${
-          isExpanded ? "max-h-[80px]" : "max-h-0"
+          isExpanded ? "max-h-[800px]" : "max-h-0"
         }`}
       >
         <p className="text-white">
