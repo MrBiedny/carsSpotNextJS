@@ -22,7 +22,7 @@ export default function Navbar() {
         </div>
         <CustomButton
           title="Zadzwoń do nas"
-          containerStyles="bg-primary-blue text-white rounded-md min-w-[158px] px-3 py-3"
+          containerStyles="bg-primary-blue text-white rounded-md sm:px-5 px-2 py-3"
         />
       </nav>
     </header>
